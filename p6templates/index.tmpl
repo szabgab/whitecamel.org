@@ -1,0 +1,19 @@
+<TMPL_INCLUDE NAME="p6templates/include/header.tmpl">
+
+<h1>White Camel Award</h1>
+<p>
+The <a href="http://www.perl.org/advocacy/white_camel/">White Camel Award</a>
+is given annually to several members of the Perl community to acknowledge 
+their effort in making the Perl community better for all of us.
+</p>
+<p>
+On this site we will provide information about the winners.
+</p>
+
+<ul>
+<TMPL_LOOP PEOPLE>
+	<li><a href="p/<TMPL_VAR NAME>.html"><TMPL_VAR NAME></a></li>
+</TMPL_LOOP>
+</ul>
+
+<TMPL_INCLUDE NAME="p6templates/include/footer.tmpl">
