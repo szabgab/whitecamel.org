@@ -1,0 +1,7 @@
+Robert Spier is one of the volunteer sysadmins for perl.org.  Working
+alongside 2001 White Camel recipient Ask Bjorn Hansen, Robert's
+unflagging efforts ensure that perl.org's mailing lists, websites,
+CVS repositories, mail archives and news servers stay up and
+running.  Robert has also taken responsibility for revamping 
+bug tracking for Perl by managing RT installations for Perl, as
+well as Parrot, CPAN modules and other ancilliary Perl projects.

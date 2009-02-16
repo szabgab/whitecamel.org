@@ -1,0 +1,5 @@
+Dave Cross is a longstanding member of the Perl community. He started
+the first non-North American Perl Mongers group, London.pm. He's the
+current leader of the Perl Mongers groups worldwide, and revived the
+Perl Mongers group leaders list.
+

@@ -1,0 +1,6 @@
+Jon Orwant is the original editor and publisher of the Perl Journal. A
+long-time Perl user, Jon has had a significant impact on the Perl
+community. Among other things, he ushered in the Perl 6 announcement
+with the now-famous "coffee mug heard round the world" at The Perl
+Conference in 2000.
+

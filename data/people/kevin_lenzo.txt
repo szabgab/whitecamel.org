@@ -1,0 +1,7 @@
+Kevin Lenzo created and sponsored the first Yet Another Perl Conference
+(YAPC) to provide a low-cost, grassroots conference for the Perl
+community. He led a small group of volunteers who organized a successful
+conference for 200 people. YAPC has encouraged the Perl community to
+provide more events on an intimate scale and we look forward to Kevin's
+YAPC 2000.
+

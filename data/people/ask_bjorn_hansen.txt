@@ -1,0 +1,6 @@
+Ask provides many support services for the Perl community including
+mailing lists for most lists devoted to Perl, hosting for Perl related
+web sites such as dev.perl.org and www.perl.org.  Special thanks to
+Ask's employer, <a href="http://www.valueclick.com">ValueClick</a>, for
+allowing him to help Perl.
+

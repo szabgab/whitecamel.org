@@ -1,0 +1,4 @@
+The YAPC::Europe team brought high quality but affordable Perl 
+conferences last year in London and this year in Amsterdam.  
+This award is shared by Leon Brocard, Greg McCarroll, and Jonathan Peterson.
+

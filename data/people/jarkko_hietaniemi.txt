@@ -1,0 +1,8 @@
+Jarkko Hietaniemi is a longtime contributor to the Perl language and the
+Perl community.  Among his many efforts are creating CPAN, the
+Comprehensive Perl Archive Network.  In his role as CPAN's
+Self-Appointed Master Librarian (OOK!), Jarkko has managed the
+master CPAN archive since its creation in 1995.  Most Perl
+programmers cite CPAN as one of the best features of Perl;
+Jarkko's constant dedication is what makes CPAN possible.
+

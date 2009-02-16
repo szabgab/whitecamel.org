@@ -13,3 +13,27 @@ Currently it has two distinct parts
      (using HTML::Template from there)
    * the checked out directoru of www.perl.org where we have 
      the original blobs from.
+
+
+TODO:
+   * copy text from www.perl.org files to our own files so we can later change them
+   * Put more obvious credit to the original site and the authors of the texts
+
+   * Mentions ths Spopnsors as listed on the original site
+   # 2004: <a href="http://www.oreilly.com">O'Reilly &amp; Associates</a>
+   # 2003: <a href="http://www.oreilly.com">O'Reilly &amp; Associates</a>
+   # 2002: <a href="http://www.oreilly.com">O'Reilly &amp; Associates</a>
+   # 2001: <a href="http://www.oreilly.com">O'Reilly &amp; Associates</a>
+
+   # 2000: 
+           <a href="http://www.oreilly.com">O'Reilly &amp; Associates</a>, 
+           <a href="http://www.stonehenge.com">Stonehenge Consulting Services, Inc.</a>,
+           <a href="http://www.mindsource.com">MindSource</a>,
+           <a href="http://www.collab.net">Collab.net</a>,
+           <a href="http://www.workspot.com">WorkSpot</a>, and
+           <a href="http://www.openave.com">OpenAvenue</a>
+
+    # 1999:
+           <a href="http://www.oreilly.com">O'Reilly &amp; Associates</a> and
+           <a href="http://www.sourceXchange.com">SourceXchange</a>
+

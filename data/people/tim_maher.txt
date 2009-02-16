@@ -1,0 +1,8 @@
+Dr. Tim Maher started and leads the Seattle Perl Users Group (SPUG), 
+one of the very first Perl users groups. Since 1998, Tim's efforts 
+with SPUG have kept it one of the most vibrant and active groups 
+anywhere in the Perl community. Tim has also been instrumental 
+in keeping SPUG a friendly place for beginners to come and 
+learn Perl, encouraging everyone to share what they learn 
+about Perl with the group.
+
