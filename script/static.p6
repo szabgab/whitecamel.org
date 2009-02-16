@@ -37,8 +37,6 @@ run "mkdir www/p";
 
 
 
-my $dir = '/home/gabor/work/www.perl.org/advocacy/white_camel/';
-
 my $time = time;
 $time = "$time"; # to avoid warning "Param TIME is a Num
 
@@ -49,8 +47,6 @@ my %conf = Perl6::Conf.from_file('data/people.conf').parse;
 #exit;
 
 my %blob = read_personal_files(%conf);
-
-#my %blob = read_html_files(%conf);
 #%blob.perl.say;
 #my %blob;
 my @people = map { {NAME => $_} }, %conf.keys.sort;
@@ -97,56 +93,6 @@ for %conf.keys -> $person {
 for %blob.keys -> $person {
 	say "WARN left over blob entry for '$person'";
 }
-
-
-# collect data from the html files 
-sub read_html_files {
-	my $in;
-	my %blob;
-	
-	# TODO: not implemented in Rakudo yet
-	#use IO::Dir;
-	#my $dh = IO::Dir::open($dir);
-
-	for 1999..2008 -> $year {
-		my $file = $dir ~ $year ~ '.html';
-		say "processing $file";
-		my $fh = open $file, :r;
-		my $name = '';
-		my $text = '';
-		for $fh.readline -> $line {
-			if ( $line ~~ / \<dt\>\<b\>[\<tt\>]? (.*?) [\<\/tt\>]?\<\/b\> / ) {
-				#say "----";
-				$name = $0;
-				$name .= subst( /Perl\s+User\s+Groups\s+\-\s+/, '');
-				$name .= subst( /Perl\s+Community\s+\-\s+/,     '');
-				$name .= subst( /Perl\s+Advocacy\s+\-\s+/,      '');
-				#say "NAME: $name";
-			}
-			# TODO: Rakudo does not implement ff (flip-flop) yet.
-			#if ( $line ~~ / \<dd\> / ff $line ~~ / \<\/dd\> | \<br\>\<br\> | \<\/dl\> /) {
-			#	say $line;
-			#}
-			if ( $line ~~ / \<dd\> (.*)/ ) {
-				$in = 1;
-				$text = "$0 ";
-				#say "IN";
-			} elsif ( $in and $line ~~ / (.*)  (\<\/dd\> | \<br\>\<br\> | \<\/dl\>) /) {
-				$in = 0;
-				$text ~= $0;
-				#say "OUT $text";
-				%blob{$name} = $text;
-				$text = '';
-			} elsif ($in) {
-				#say "ADD";
-				$text ~= "$line ";
-			}
-			#say $line;
-		}
-	}
-	return %blob;
-}
-
 
 multi sub fill_template($name, %params) {
 	return fill_template($name, $name, %params);
