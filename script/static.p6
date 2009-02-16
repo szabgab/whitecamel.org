@@ -72,6 +72,13 @@ my @people = map { {NAME => $_} }, %conf.keys.sort;
 {
 	my %params;
 	%params<TIME> = $time;
+	%params<TITLE> = "Sponsors of the White Camel Award";
+	fill_template('sponsors', %params);
+}
+
+{
+	my %params;
+	%params<TIME> = $time;
 	%params<TITLE> = "News of WhiteCamel.org";
 	fill_template('news', %params);
 }; #TODO ; needed due to parsing bug
