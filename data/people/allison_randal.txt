@@ -1,0 +1,7 @@
+<a href="http://www.lohutok.net/">Allison</a> is at the center of the
+Perl community. She's been president of The Perl Foundation, a leader
+and manager of various parts of the Perl 6 and Parrot efforts, as well
+a Perl author and editor. Her latest contribution to Perl is version 2
+of the Artistic License, under which most open source Perl code, and
+Perl itself, is licensesd "under the
+terms of Perl itself".

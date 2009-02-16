@@ -1,0 +1,8 @@
+Eric Cholet may be familiar to you as the technical manager of the
+YAPC Europe Foundation and as co-author of A Conference Toolkit (ACT),
+which has been used to administer several European YAPCs. More
+importantly, though, he works behind the scenes at perl.org,
+moderating the mailing lists we all use. If you've noticed the absence
+of spam on a perl.org mailing list, filters help, but Eric catches
+what falls through.
+

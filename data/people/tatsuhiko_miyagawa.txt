@@ -1,0 +1,9 @@
+Despite his considerable technical contributions to Perl, Miyagawa is
+an active community organizer and advocate for Perl. He is so active
+in the Perl community that it is rumored that he never sleeps. For the
+past three years, he has been one of the main organizers for
+YAPC::Asia -- helping that event to break worldwide YAPC attendance
+records. He has organized numerous meetings for Shibuya.pm, growing it
+to one of the largest Perl Monger groups in existence and frequently
+organizes cross-language meetings and events.
+

@@ -1,0 +1,5 @@
+<a href="http://www.mpa-garching.mpg.de/~nog/">Norbert</a> help start
+the German Perl Workshop in 1999 and now is involved in several of the
+Perl conferences and workshops that take place in Europe. He's the
+chair of the YAPC::Europe committee.
+

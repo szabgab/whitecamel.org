@@ -1,0 +1,6 @@
+Gabor Szabo is also a three time YAPC organizer (YAPC::Israel) and is
+also involved with OSDC::Israel and multiple Hungarian Perl
+Workshops. His contributions to the greater Perl community consist of
+countless weblog entries, comments, emails and support.  His support
+of the Israel Perl Monger groups have made them some of the most
+vibrant in the world.

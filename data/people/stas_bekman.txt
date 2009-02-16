@@ -1,0 +1,8 @@
+Stas Bekman has been a tireless advocate for large-scale applications
+in Perl and, of course, mod_perl. He went from an occasional asker of
+questions on the mod_perl list to answering many questions, and had
+the forethought to write it all down, creating and maintaining the
+mod_perl guide which quickly grew to over 600 pages. Recently, he made
+himself available for free talks to Perl Mongers groups during a trip
+covering North America, Australia, the Middle East and elsewhere.
+

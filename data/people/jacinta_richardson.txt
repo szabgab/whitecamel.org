@@ -1,0 +1,10 @@
+Jacinta has been credited for saving more than one Perl Monger group
+from dying and is often heralded as the "gardener of the Australian
+Perl Community", in the sense that she provides energy while subtly
+encouraging others to take responsibility. She is an active member in
+every Monger group in Australia, as well as many other FLOSS groups in
+the area.  Her resume includes working to organize OSDC,
+Linux.conf.au, and SAGE conferences.  She also works with Perl
+Training Australia in supporting the Perl community with such ventures
+as perl.net.au and Perl Tips.
+

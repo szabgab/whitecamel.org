@@ -1,0 +1,7 @@
+Jay Hannah keeps <a href="http://www.pm.org/">Perl Mongers user groups</a>
+running. Perl Mongers started by providing free web hosting, domain
+names, mailing lists, and other central services to make it as easy as
+possible for new user groups to start and to attract Perl hackers in their
+area. The maintenance of these services has always been a thankless job,
+and the Perl community is fortunate that Jay Hannah keeps it working.
+

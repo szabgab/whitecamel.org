@@ -1,0 +1,9 @@
+Andy Lester is one of the prominent voices advocating testing and
+quality assurance. He has written extensively on the importance of
+good testing and maintains qa.perl.org. He is also the creator and
+project leader of Phalanx, which is devoted to improving tests and
+test coverage of Perl and CPAN modules to maintain quality as
+development continues. Phalanx encourages interaction between
+programmers by having groups of developers work together to improve
+test coverage on the most used CPAN modules.
+

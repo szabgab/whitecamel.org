@@ -48,9 +48,10 @@ my %conf = Perl6::Conf.from_file('data/people.conf').parse;
 #%conf.perl.say;
 #exit;
 
-my %blob = read_html_files(%conf);
+my %blob = read_personal_files(%conf);
+
+#my %blob = read_html_files(%conf);
 #%blob.perl.say;
-#exit;
 #my %blob;
 my @people = map { {NAME => $_} }, %conf.keys.sort;
 #@people.perl.say;
@@ -164,3 +165,18 @@ multi sub fill_template($source, $target, %params) {
     return;
 }
 
+sub read_personal_files(%c) {
+	my %text;
+	for %c.keys -> $person {
+		if %c{$person}<id> {
+			#say %c{$person}<id>;
+			#my %p = Perl6::Conf.from_file("data/people/{%c{$person}<file>}").parse;
+			#%p.perl.say;
+			#%text{$person} = %p<text>;
+			%text{$person} = slurp("data/people/{%c{$person}<id>}.txt");
+		} else {
+			say "Missing id from {$person}";
+		}
+	}
+	return %text;
+}
