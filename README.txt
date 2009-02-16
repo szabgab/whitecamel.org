@@ -16,10 +16,9 @@ Currently it has two distinct parts
 
 
 TODO:
-   * copy text from www.perl.org files to our own files so we can later change them
-   * Put more obvious credit to the original site and the authors of the texts
-
-   * Mentions ths Spopnsors as listed on the original site
+   * in some years the award had a cash prize from a sponsor, so we
+     should acknowledge those. We could encourage more cash awards.
+   * The Spopnsors as listed on the original site:
    # 2004: <a href="http://www.oreilly.com">O'Reilly &amp; Associates</a>
    # 2003: <a href="http://www.oreilly.com">O'Reilly &amp; Associates</a>
    # 2002: <a href="http://www.oreilly.com">O'Reilly &amp; Associates</a>
@@ -36,4 +35,10 @@ TODO:
     # 1999:
            <a href="http://www.oreilly.com">O'Reilly &amp; Associates</a> and
            <a href="http://www.sourceXchange.com">SourceXchange</a>
+
+   * Write down the history of the award and what the process is deciding who gets it.
+
+   * the awards were originally given out by Perl Mongers, Inc but passed
+     on to TPF around 2002 when PM merged with them.
+
 
