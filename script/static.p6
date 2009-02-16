@@ -1,19 +1,11 @@
 #!/usr/bin/perl6
 use v6;
 
-# use modules from November and my own repository
-BEGIN {
-	@*INC.push('/home/gabor/work/november/p6w/');
-	#@*INC.push('/home/gabor/work/november/p6w/', '/home/gabor/work/szabgab/trunk/Perl6-Conf/lib/');
-}
+# Needs PERL6LIB configureation:
+use HTML::Template;     # get from the git repository of November-wiki 
+use Perl6::Conf;        # install from CPAN
 
-use HTML::Template;
-use Perl6::Conf;
-
-#run "rm -fr www/p6";
-#run "mkdir www/p6";
 run "mkdir www/p";
-
 
 # Cron-job on my notebook, 
 #   Perl 5 - check if rakudo is available, mirror the files from the remote location 
