@@ -73,8 +73,20 @@ my @people = map { {NAME => $_} }, %conf.keys.sort;
 	%params<TIME> = $time;
 	%params<TITLE> = "News of WhiteCamel.org";
 	fill_template('news', %params);
-}; #TODO ; needed due to parsing bug
+}
 
+{
+	my $config = slurp('p6templates/config.tmpl');
+	for %conf.keys.sort -> $person {
+		if (%conf{$person}<feed>) {
+			$config ~= "\n[{%conf{$person}<feed>}]\nname = $person\n\n";
+		}
+	}
+    my $out = open "data/config.ini", :w;
+	$out.print($config);
+}
+
+; #TODO ; needed due to parsing bug
 for %conf.keys -> $person {
 	say "processing '$person'";
 	my %params;
