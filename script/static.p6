@@ -78,8 +78,18 @@ my @people = map { {NAME => $_} }, %conf.keys.sort;
 {
 	my $config = slurp('p6templates/config.tmpl');
 	for %conf.keys.sort -> $person {
-		if (%conf{$person}<feed>) {
-			$config ~= "\n[{%conf{$person}<feed>}]\nname = $person\n\n";
+		# TODO RAKUDO should be 1.. once that works
+		for 1..5 -> $i {
+			my $feed_key  = "feed$i";
+			my $title_key = "title$i";
+			#say $feed_key;
+			if (%conf{$person}{$feed_key}) {
+				# TODO RAKUDO does not support // yet
+				my $name = %conf{$person}{$title_key} || $person;
+				$config ~= "\n[{%conf{$person}{$feed_key}}]\nname = $name\n\n";
+			} else {
+				last;
+			}
 		}
 	}
     my $out = open "data/config.ini", :w;
