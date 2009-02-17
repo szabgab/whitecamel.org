@@ -1,4 +1,5 @@
-Andreas Koenig is the creator and maintainer of PAUSE, the Perl Authors
+Andreas Koenig is the creator and maintainer of 
+<a href="http://pause.cpan.org/">PAUSE</a>, the Perl Authors
 Upload Server.  Since 1995, PAUSE has allowed Perl module authors
 to contribute source code to CPAN and share it with the Perl
 community.  Additionally, Andreas created the CPAN.pm module,
