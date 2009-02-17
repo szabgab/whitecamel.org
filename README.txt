@@ -24,12 +24,7 @@ TODO:
 
 
    * Collect URLs, rss feeds from the winners
-   * generate the config.ini file from the list of blogs in 
-     the people.ini file in order to eliminate the duplication
-
    * Link to the home page of the people
-
    * Update the text on the individual pages
-
    * Links to the Perl Mongers, YAPCs
 
