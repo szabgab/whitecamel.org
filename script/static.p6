@@ -102,6 +102,8 @@ for %conf.keys -> $person {
 	my %params;
 	%params<TIME>  = $time;
 	%params<TITLE> = $person;
+	%params<URL>   = %conf{$person}<url> || '';
+	%params<YEAR>  = %conf{$person}<year>;
 	%params<NAME>  = $person;
 	%params<BLOB>  = %blob{$person};
 	if (%blob{$person} eq '') {

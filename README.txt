@@ -24,7 +24,7 @@ TODO:
 
 
    * Collect URLs, rss feeds from the winners
-   * Link to the home page of the people
+   * Collect countries of residence (when the award was received) ?
    * Update the text on the individual pages
    * Links to the Perl Mongers, YAPCs
 

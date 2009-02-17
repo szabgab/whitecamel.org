@@ -1,6 +1,13 @@
 <TMPL_INCLUDE NAME="p6templates/include/header.tmpl">
 
-<h1><TMPL_VAR NAME></h1>
+<TMPL_IF URL>
+   <h1><a href="<TMPL_VAR URL>"><TMPL_VAR NAME></a></h1>
+<TMPL_ELSE>
+	<h1><TMPL_VAR NAME></h1>
+</TMPL_IF>
+<p>
+Award received in <TMPL_VAR YEAR>.
+</p>
 <p>
 <TMPL_VAR BLOB>
 </p>
