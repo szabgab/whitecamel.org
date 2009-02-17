@@ -5,3 +5,4 @@ www/blogs/*.html
 www/*.html
 www/p
 templates/*.tmplc
+data/config.ini
