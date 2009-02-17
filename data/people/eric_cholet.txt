@@ -1,5 +1,7 @@
 Eric Cholet may be familiar to you as the technical manager of the
-YAPC Europe Foundation and as co-author of A Conference Toolkit (ACT),
+<a href="http://www.yapceurope.org/">YAPC Europe Foundation</a>
+and as co-author of 
+<a href="http://act.mongueurs.net/">A Conference Toolkit (ACT)</a>,
 which has been used to administer several European YAPCs. More
 importantly, though, he works behind the scenes at perl.org,
 moderating the mailing lists we all use. If you've noticed the absence
