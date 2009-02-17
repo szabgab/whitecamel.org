@@ -25,6 +25,12 @@ TODO:
 
    * Collect URLs, rss feeds from the winners
    * Collect countries of residence (when the award was received) ?
-   * Update the text on the individual pages
+   * Update the text on the individual pages (they should somehow 
+     include information that shows what did the person do before receiving the
+     award and what are newer things). That might preserv the historical
+     information.
+     Also some of the texts might need to be changed to past tense as people 
+     have moved on from various positions or activities.
+ 
    * Links to the Perl Mongers, YAPCs
 
