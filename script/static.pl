@@ -73,7 +73,7 @@ for my $person (keys %blob) {
 
 sub fill_template {
 	my ($source, $target, %params) = @_;
-	my $path = "p6templates/$source.tmpl";
+	my $path = "templates/$source.tmpl";
 	#say $path;
     my $template = HTML::Template->new(filename => $path);
     $template->param(%params);
