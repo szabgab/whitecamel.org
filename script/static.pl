@@ -11,7 +11,7 @@ sub say { print @_, "\n" };
 
 mkdir "www/p";
 
-my $time = time;
+my $time = localtime;
 
 my $conf = Config::Tiny->read('data/people.conf');
 
