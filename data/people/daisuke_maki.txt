@@ -1,0 +1,6 @@
+If you’re doing Perl in Japan, you’ve probably run into Daisuke Maki. 
+He’s active in Shibuya.pm and many of the YAPC::Asia. He also started 
+the Japan Perl Association, the counterpart to The Perl Foundation and 
+YAPC::Europe Foundation. For this, we recognize Daisuke Maki for 
+the 2011 White Camel Award for Outstanding Contribution to Perl user groups.
+

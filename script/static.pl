@@ -18,7 +18,7 @@ die "Could not read config file: $Config::Tiny::errstr" if not defined $conf;
 #print Dumper $conf;
 
 my %blob = read_personal_files($conf);
-print Dumper \%blob;
+#print Dumper \%blob;
 
 my @people = map { {NAME => $_} } sort keys %$conf;
 
