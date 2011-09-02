@@ -1,0 +1,5 @@
+Barbie is the glue that holds together CPAN Testers, the ad hoc group 
+of people who download, test, and report on everything we upload to CPAN. 
+Although there are a lot of technical aspects to making this work, 
+creating and maintaining the community might be the hardest part of it. 
+CPAN Testers success relies on attracting and retaining people who are interested in working with it.

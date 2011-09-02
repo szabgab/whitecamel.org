@@ -1,0 +1,4 @@
+José is seemingly ever present in support of Perl events in Portugal. 
+He's helped to organize user groups as well as YAPCs and workshops. 
+Besides supporting events in his own country, he's a constant help for 
+other events and groups, and for he even maintained parts of the original Perl mongers.

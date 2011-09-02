@@ -14,9 +14,11 @@ mkdir "www/p";
 my $time = localtime;
 
 my $conf = Config::Tiny->read('data/people.conf');
+die "Could not read config file: $Config::Tiny::errstr" if not defined $conf;
+#print Dumper $conf;
 
 my %blob = read_personal_files($conf);
-#print Dumper \%blob;
+print Dumper \%blob;
 
 my @people = map { {NAME => $_} } sort keys %$conf;
 
@@ -66,7 +68,7 @@ for my $person (keys %$conf) {
 		BLOB  => $blob{$person},
     );
 	if ($blob{$person} eq '') {
-		"WARN person '$person' has no blob";
+		warn "person '$person' has no blob";
 	}
 	delete $blob{$person};
 	my $file = $conf->{$person}{name} ? $conf->{$person}{name} : $person;
@@ -105,7 +107,7 @@ sub read_personal_files {
 
 sub read_file {
 	my $file = shift;
-	open my $fh, '<', $file or die;
+	open my $fh, '<', $file or die "Could not open '$file' $!";
 	local $/ = undef;
 	return <$fh>;
 }
