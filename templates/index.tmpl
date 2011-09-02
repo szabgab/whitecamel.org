@@ -7,11 +7,23 @@ is given annually to several members of the Perl community to acknowledge
 their effort in making the Perl community better for all of us.
 </p>
 
+Congratulations to the <TMPL_VAR YEAR> White Camels!
+<div id="current">
+<ul>
+<TMPL_LOOP CURRENT>
+	<li><a href="p/<TMPL_VAR NAME>.html"><TMPL_VAR NAME></a></li>
+</TMPL_LOOP>
+</ul>
+</div>
+
+<hr />
+
+<div id="list">
 <ul>
 <TMPL_LOOP PEOPLE>
 	<li><a href="p/<TMPL_VAR NAME>.html"><TMPL_VAR NAME></a></li>
 </TMPL_LOOP>
 </ul>
-
+</div>
 
 <TMPL_INCLUDE NAME="templates/include/footer.tmpl">

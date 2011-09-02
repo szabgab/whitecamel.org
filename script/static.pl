@@ -3,9 +3,10 @@ use v5.8;
 use strict;
 use warnings;
 
-use HTML::Template;
 use Config::Tiny;
 use Data::Dumper qw(Dumper);
+use HTML::Template;
+use List::Util qw(max);
 
 sub say { print @_, "\n" };
 
@@ -20,13 +21,18 @@ die "Could not read config file: $Config::Tiny::errstr" if not defined $conf;
 my %blob = read_personal_files($conf);
 #print Dumper \%blob;
 
-my @people = map { {NAME => $_} } sort keys %$conf;
+my @people = map { { NAME => $_, YEAR => $conf->{$_}{year} } } sort keys %$conf;
+my $year = max map { $conf->{$_}{year} } sort keys %$conf;
+my @current = grep { $_->{YEAR} eq $year } @people;
+
 
 {
 	my %params = (
-		TIME   => $time,
-		TITLE  => "White Camel Award Winners",
-		PEOPLE => \@people,
+		TIME    => $time,
+		TITLE   => "White Camel Award Winners",
+		PEOPLE  => \@people,
+		CURRENT => \@current,
+		YEAR    => $year,
 	);
 	fill_template('index', 'index', %params);
 }
@@ -65,7 +71,7 @@ sub fill_template {
 	my ($source, $target, %params) = @_;
 	my $path = "templates/$source.tmpl";
 	#say $path;
-    my $template = HTML::Template->new(filename => $path);
+    my $template = HTML::Template->new(die_on_bad_params => 0, filename => $path);
     $template->param(%params);
     open my $out, '>', "www/$target.html" or die;
     print $out $template->output;
