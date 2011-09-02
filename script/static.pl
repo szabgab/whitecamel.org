@@ -49,14 +49,6 @@ my @people = map { {NAME => $_} } sort keys %$conf;
 	fill_template('sponsors', 'sponsors', %params);
 }
 
-{
-	my %params = (
-		TIME  => $time,
-		TITLE => "News of WhiteCamel.org",
-	);
-	fill_template('news', 'news', %params);
-}
-
 for my $person (keys %$conf) {
 	say "processing '$person'\n";
 	my %params = (
