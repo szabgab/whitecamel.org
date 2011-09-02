@@ -34,3 +34,12 @@ TODO:
  
    * Links to the Perl Mongers, YAPCs
 
+   * A photo of the person (make the more easy to recognise at events, make the profile more personal) 
+    - provided by the recipient of course and if they don't want to submit one, that's fine.
+   * A bio/profile of the person, what they do.  Not all the white camel nominations/award texts tell the whole story, 
+     so it could be cool to have 4 - 6 paragraphs from the person about what they do in/for the Perl community
+   * A story of how that person got into Perl in the first place,
+     and perhaps links to conferences they attend or their local Perl Mongers group.
+   * A calendar of forthcoming speaking engagements.
+
+   * Interview with the award winner

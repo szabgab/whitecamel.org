@@ -22,16 +22,6 @@ my %blob = read_personal_files($conf);
 
 my @people = map { {NAME => $_} } sort keys %$conf;
 
-
-{
-	my %params = (
-		TIME  => $time,
-		TITLE => "About the WhiteCamel.org web site",
-	);
-	fill_template('about', 'about', %params);
-}
-
-
 {
 	my %params = (
 		TIME   => $time,
