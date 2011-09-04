@@ -1,4 +1,4 @@
 *.swp
 www/*.html
 www/p
-logs/
+logs
