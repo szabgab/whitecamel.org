@@ -265,3 +265,12 @@ INPUT {
 	width: 70%;
 }
 
+#title {
+	margin: 30px;
+	font-size: 34px;
+	text-align: center;
+}
+#title a {
+	text-decoration: none;
+}
+
