@@ -21,7 +21,17 @@ die "Could not read config file: $Config::Tiny::errstr" if not defined $conf;
 my %blob = read_personal_files($conf);
 #print Dumper \%blob;
 
-my @people = map { { NAME => $_, YEAR => $conf->{$_}{year}, ID => $conf->{$_}{id} } } sort keys %$conf;
+my @people;
+foreach my $name (sort keys %$conf) {
+	my %p = (
+		NAME => $name,
+		YEAR => $conf->{$name}{year},
+		ID   => $conf->{$name}{id},
+	);
+	$p{IMG} = "$conf->{$name}{id}.jpg" if -e "www/img/$conf->{$name}{id}.jpg";
+	push @people, \%p; 
+}
+
 my $year = max map { $conf->{$_}{year} } sort keys %$conf;
 my @current = grep { $_->{YEAR} eq $year } @people;
 

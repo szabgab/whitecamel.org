@@ -11,7 +11,9 @@ Congratulations to the <TMPL_VAR YEAR> White Camels!
 <div id="current">
 <ul>
 <TMPL_LOOP CURRENT>
-	<li><a href="p/<TMPL_VAR ID>.html"><TMPL_VAR NAME></a></li>
+	<li><a href="p/<TMPL_VAR ID>.html"><TMPL_VAR NAME></a>
+        <img src="/img/<TMPL_VAR IMG>" />
+    </li>
 </TMPL_LOOP>
 </ul>
 </div>
