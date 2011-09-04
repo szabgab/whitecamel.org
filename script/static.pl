@@ -21,7 +21,7 @@ die "Could not read config file: $Config::Tiny::errstr" if not defined $conf;
 my %blob = read_personal_files($conf);
 #print Dumper \%blob;
 
-my @people = map { { NAME => $_, YEAR => $conf->{$_}{year} } } sort keys %$conf;
+my @people = map { { NAME => $_, YEAR => $conf->{$_}{year}, ID => $conf->{$_}{id} } } sort keys %$conf;
 my $year = max map { $conf->{$_}{year} } sort keys %$conf;
 my @current = grep { $_->{YEAR} eq $year } @people;
 
@@ -59,8 +59,7 @@ for my $person (keys %$conf) {
 		warn "person '$person' has no blob";
 	}
 	delete $blob{$person};
-	my $file = $conf->{$person}{name} ? $conf->{$person}{name} : $person;
-	fill_template('person', "p/$file", %params);
+	fill_template('person', "p/$conf->{$person}{id}", %params);
 }
 for my $person (keys %blob) {
 	say "WARN left over blob entry for '$person'";
