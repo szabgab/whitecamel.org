@@ -1,0 +1,6 @@
+Renee Bäcker is at the heart of the German Perl community.
+He publishes <a href="http://foo-magazin.de/">$foo Magazine</a>,
+a sponsor of <a href="http://yapcna.org/">YAPC::NA 2012</a>,
+is a leader in the <a href="http://www.perlmongers.de/">German Perl monger community</a>,
+and is organizing this year's <a href="http://act.yapc.eu/ye2012/">YAPC::EU</a> in Frankfurt
+(although he was already short-listed for this award before we knew that).

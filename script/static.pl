@@ -28,8 +28,10 @@ foreach my $name (sort keys %$conf) {
 		YEAR => $conf->{$name}{year},
 		ID   => $conf->{$name}{id},
 	);
-	$p{IMG} = "$conf->{$name}{id}.jpg" if -e "www/img/$conf->{$name}{id}.jpg";
-	push @people, \%p; 
+	foreach my $ext (qw(jpg png)) {
+		$p{IMG} = "$conf->{$name}{id}.$ext" if -e "www/img/$conf->{$name}{id}.$ext";
+	}
+	push @people, \%p;
 }
 
 my $year = max map { $conf->{$_}{year} } sort keys %$conf;
