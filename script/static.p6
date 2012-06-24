@@ -1,9 +1,8 @@
-#!/usr/bin/perl6
+#!/usr/bin/env perl6
 use v6;
 
-# Needs PERL6LIB configureation:
-use HTML::Template;     # get from the git repository of November-wiki 
-use Perl6::Conf;        # install from CPAN
+use HTML::Template;
+use Config::INI;
 
 run "mkdir www/p";
 
