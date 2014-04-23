@@ -1,4 +1,4 @@
-Gabor Szabo is also a three time YAPC organizer 
+Gabor Szabo is also a three-time YAPC organizer 
 (<a href="http://www.perl.org.il/YAPC/">YAPC::Israel</a>) and is
 also involved with <a href="http://www.osdc.org.il/">OSDC::Israel</a> 
 and multiple Hungarian Perl Workshops. His contributions to 
