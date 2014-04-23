@@ -20,7 +20,9 @@ Congratulations to the <TMPL_VAR YEAR> White Camels!
 <ul>
 <TMPL_LOOP CURRENT>
  <li><a href="p/<TMPL_VAR ID>.html"><TMPL_VAR NAME></a>
+   <TMPL_IF IMG>
    <img src="/img/<TMPL_VAR IMG>" />
+   </TMPL_IF>
  </li>
 </TMPL_LOOP>
 </ul>
