@@ -2,3 +2,7 @@
 www/*.html
 www/p
 logs
+MYMETA.*
+Makefile
+blib/
+pm_to_blib
