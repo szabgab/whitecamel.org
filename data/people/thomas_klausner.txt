@@ -1,0 +1,7 @@
+Thomas Klausner ("domm" to many people) of the <a
+href="http://vienna.pm.org/">Vienna Perl mongers</a> literally works
+harder than everyone else to get to Perl events. Starting in Vienna,
+he cycles to many events. He's worked as an organizer for several
+workshops in his area (most recently the first Alpine Perl Workshop).
+He's a core part of the conference community even if he doesn't boast
+about his work.
