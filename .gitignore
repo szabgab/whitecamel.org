@@ -1,6 +1,4 @@
 *.swp
-www/*.html
-www/p
 logs
 MYMETA.*
 Makefile

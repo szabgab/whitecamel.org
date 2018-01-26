@@ -10,7 +10,8 @@ use List::Util qw(max);
 
 sub say { print @_, "\n" };
 
-mkdir "www/p";
+my $dir = 'docs';
+mkdir "$dir/p";
 
 my $time = localtime;
 
@@ -29,7 +30,7 @@ foreach my $name (sort keys %$conf) {
 		ID   => $conf->{$name}{id},
 	);
 	foreach my $ext (qw(jpg png)) {
-		$p{IMG} = "$conf->{$name}{id}.$ext" if -e "www/img/$conf->{$name}{id}.$ext";
+		$p{IMG} = "$conf->{$name}{id}.$ext" if -e "$dir/img/$conf->{$name}{id}.$ext";
 	}
 	push @people, \%p;
 }
@@ -84,7 +85,7 @@ sub fill_template {
 	#say $path;
     my $template = HTML::Template->new(die_on_bad_params => 0, filename => $path);
     $template->param(%params);
-    open my $out, '>', "www/$target.html" or die;
+    open my $out, '>', "$dir/$target.html" or die;
     print $out $template->output;
 
     return;
