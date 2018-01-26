@@ -11,18 +11,19 @@ sub count { 4 }
 
 sub test {
 	my $cmd = shift;
+    my $dir = 'docs';
 
-	unlink 'www/index.html', glob 'www/p/*.html';
+	unlink "$dir/index.html", glob "$dir/p/*.html";
 
 	my $Test = t::lib::WhiteCamel->builder;
 
-	$Test->ok( !-e 'www/index.html' );
-	$Test->ok( !-e 'www/p/yapc_eu_team.html' );
+	$Test->ok( !-e "$dir/index.html" );
+	$Test->ok( !-e "$dir/p/yapc_eu_team.html" );
 
 	system $cmd;
 
-	$Test->ok( -e 'www/index.html' );
-	$Test->ok( -e 'www/p/yapc_eu_team.html' );
+	$Test->ok( -e "$dir/index.html" );
+	$Test->ok( -e "$dir/p/yapc_eu_team.html" );
 }
 
 
