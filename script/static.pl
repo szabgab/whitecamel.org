@@ -71,6 +71,8 @@ for my $person (keys %$conf) {
 		YEAR  => $conf->{$person}{year},
 		NAME  => $person,
 		BLOB  => $blob{$person},
+		GITHUB  => $conf->{$person}{github},
+		LINKEDIN  => $conf->{$person}{linkedin},
     );
 	if ($blob{$person} eq '') {
 		warn "person '$person' has no blob";

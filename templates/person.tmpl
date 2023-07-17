@@ -12,4 +12,12 @@ Award received in <TMPL_VAR YEAR>.
 <TMPL_VAR BLOB>
 </p>
 
+<TMPL_IF GITHUB>
+    <a href="https://github.com/<TMPL_VAR GITHUB>">GitHub</a>
+</TMPL_IF>
+
+<TMPL_IF LINKEDIN>
+   <a href="https://linkedin.com/in/<TMPL_VAR LINKEDIN>">LinkedIn</a>
+</TMPL_IF>
+
 <TMPL_INCLUDE NAME="templates/include/footer.tmpl">
