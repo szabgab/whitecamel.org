@@ -44,6 +44,9 @@ jobs:
           cpanm -v
           cpanm --installdeps --notest .
 
+      - name: Copy static files
+        run: cp -r docs _site
+
       - name: Build pages
         run: perl script/static.pl _site
 
