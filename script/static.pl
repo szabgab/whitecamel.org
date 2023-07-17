@@ -11,6 +11,10 @@ use List::Util qw(max);
 sub say { print @_, "\n" };
 
 my $dir = 'docs';
+if (@ARGV) {
+    $dir = shift @ARGV;
+}
+mkdir $dir;
 mkdir "$dir/p";
 
 my $time = localtime;
