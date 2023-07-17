@@ -1,0 +1,1 @@
+David Farrell started the PerlTricks.com site in 2013, then ressurrected Perl.com in 2017 (merging PerlTricks into it at the same time). He moved Perl.com to a GitHub repository that anyone can send pull requests to. Now it's easier than ever to not only create new content but update existing articles. He's also one of the co-organizers of the New York Perl mongers.
