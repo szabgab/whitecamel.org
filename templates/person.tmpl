@@ -1,23 +1,26 @@
 <TMPL_INCLUDE NAME="templates/include/header.tmpl">
 
-<TMPL_IF URL>
-   <h1><a href="<TMPL_VAR URL>"><TMPL_VAR NAME></a></h1>
-<TMPL_ELSE>
-	<h1><TMPL_VAR NAME></h1>
-</TMPL_IF>
-<p>
-Award received in <TMPL_VAR YEAR>.
-</p>
-<p>
-<TMPL_VAR BLOB>
-</p>
+  <div class="row" style="margin-top: 5%">
+   <div class="full column award-winners">
 
-<TMPL_IF GITHUB>
-    <a href="https://github.com/<TMPL_VAR GITHUB>">GitHub</a>
-</TMPL_IF>
+      <TMPL_IF URL>
+         <h4><a href="<TMPL_VAR URL>"><TMPL_VAR NAME></a></h4>
+      <TMPL_ELSE>
+         <h4><TMPL_VAR NAME></h4>
+      </TMPL_IF>
 
-<TMPL_IF LINKEDIN>
-   <a href="https://linkedin.com/in/<TMPL_VAR LINKEDIN>">LinkedIn</a>
-</TMPL_IF>
+      <p>Award received in <TMPL_VAR YEAR>.</p>
+      <p><TMPL_VAR BLOB></p>
+      
+      <TMPL_IF GITHUB>
+         <a href="https://github.com/<TMPL_VAR GITHUB>">GitHub</a>
+      </TMPL_IF>
+      
+      <TMPL_IF LINKEDIN>
+         <a href="https://linkedin.com/in/<TMPL_VAR LINKEDIN>">LinkedIn</a>
+      </TMPL_IF>
+
+   </div>
+  </div>
 
 <TMPL_INCLUDE NAME="templates/include/footer.tmpl">
