@@ -1,41 +1,39 @@
 <TMPL_INCLUDE NAME="templates/include/header.tmpl">
 
+  <div class="row" style="margin-top: 5%">
+    <div class="one-half column award-winners">
+      <h5>Congratulations to the <b>2022 White Camels!</b></h5>
+      <TMPL_LOOP CURRENT>
+      <a href="p/<TMPL_VAR ID>.html"><h4><TMPL_VAR NAME></h4></a>
+      </TMPL_LOOP>
+    </div>
+    <div class="one-half column">
+      <p>The White Camel Award is given annually to several members of the Perl community to acknowledge their effort in making the Perl community better for all of us.</p>
+    </div>
+  </div>
 
-
-<header class="jumbotron masthead">
- <div class="inner">
-  <h1><a href="/">White Camel Award</a></h1>
-  <p>
-  The White Camel Award
-  is given annually to several members of the Perl community to acknowledge
-  their effort in making the Perl community better for all of us.
-  </p>
-
- </div>
-</header>
-
-
-Congratulations to the <TMPL_VAR YEAR> White Camels!
-<div id="current">
-<ul>
-<TMPL_LOOP CURRENT>
- <li><a href="p/<TMPL_VAR ID>.html"><TMPL_VAR NAME></a>
-   <TMPL_IF IMG>
-   <img src="/img/<TMPL_VAR IMG>" />
-   </TMPL_IF>
- </li>
-</TMPL_LOOP>
-</ul>
-</div>
-
-<hr />
-
-<div id="list">
-<ul>
-<TMPL_LOOP PEOPLE>
- <li><a href="p/<TMPL_VAR ID>.html"><TMPL_VAR NAME></a></li>
-</TMPL_LOOP>
-</ul>
-</div>
+  <div class="row award-winners" style="margin-top: 5%">
+    <div class="one-third column">
+      <ul>
+        <TMPL_LOOP PEOPLE_COL1>
+        <li><a href="p/<TMPL_VAR ID>.html"><TMPL_VAR NAME></a></li>
+        </TMPL_LOOP>
+      </ul>
+    </div>
+    <div class="one-third column">
+      <ul>
+        <TMPL_LOOP PEOPLE_COL2>
+        <li><a href="p/<TMPL_VAR ID>.html"><TMPL_VAR NAME></a></li>
+        </TMPL_LOOP>
+      </ul>
+    </div>
+    <div class="one-third column">
+      <ul>
+        <TMPL_LOOP PEOPLE_COL3>
+        <li><a href="p/<TMPL_VAR ID>.html"><TMPL_VAR NAME></a></li>
+        </TMPL_LOOP>
+      </ul>
+    </div>
+  </div>
 
 <TMPL_INCLUDE NAME="templates/include/footer.tmpl">

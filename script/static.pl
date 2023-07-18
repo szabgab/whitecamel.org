@@ -4,9 +4,10 @@ use strict;
 use warnings;
 
 use Config::Tiny;
-use Data::Dumper qw(Dumper);
+use Data::Dumper qw( Dumper );
 use HTML::Template;
-use List::Util qw(max);
+use List::Util qw( max );
+use POSIX qw( ceil );
 
 sub say { print @_, "\n" };
 
@@ -42,18 +43,31 @@ foreach my $name (sort keys %$conf) {
 my $year = max map { $conf->{$_}{year} } sort keys %$conf;
 my @current = grep { $_->{YEAR} eq $year } @people;
 
+# split @people into 3 columns, as per index page layout
+my (@people_col1, @people_col2, @people_col3);
+my $num_rows = ceil(@people / 3);
+for my $row_num (0 .. $num_rows-1) {
+   my ($col1, $col2, $col3) = @people[ grep { $_ < @people } map { $row_num + $num_rows*$_ } 0..2 ];
+   push @people_col1, $col1 if defined $col1;
+   push @people_col2, $col2 if defined $col2;
+   push @people_col3, $col3 if defined $col3;
+}
 
+# -- index page --
 {
 	my %params = (
 		TIME    => $time,
 		TITLE   => "White Camel Award Winners",
-		PEOPLE  => \@people,
+		PEOPLE_COL1  => \@people_col1,
+		PEOPLE_COL2  => \@people_col2,
+		PEOPLE_COL3  => \@people_col3,
 		CURRENT => \@current,
 		YEAR    => $year,
 	);
 	fill_template('index', 'index', %params);
 }
 
+# -- sponsors page --
 {
 	my %params = (
 		TIME  => $time,
@@ -62,6 +76,7 @@ my @current = grep { $_->{YEAR} eq $year } @people;
 	fill_template('sponsors', 'sponsors', %params);
 }
 
+# -- individual people pages --
 for my $person (keys %$conf) {
 	say "processing '$person'\n";
 	my %params = (
@@ -93,7 +108,6 @@ sub fill_template {
     $template->param(%params);
     open my $out, '>', "$dir/$target.html" or die;
     print $out $template->output;
-
     return;
 }
 
