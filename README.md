@@ -61,3 +61,7 @@ Links to pages for each year: ????
    ...
 Each year has the list of the awardees with pictures.
 
+## Contributors
+
+* [Irakliy Sunguryan](https://github.com/OpossumPetya)  (design)
+
