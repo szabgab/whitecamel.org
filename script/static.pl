@@ -28,7 +28,7 @@ my %blob = read_personal_files($conf);
 #print Dumper \%blob;
 
 my @people;
-foreach my $name (sort keys %$conf) {
+foreach my $name (sort { lc $a cmp lc $b } keys %$conf) {
 	my %p = (
 		NAME => $name,
 		YEAR => $conf->{$name}{year},
