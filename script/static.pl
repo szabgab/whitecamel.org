@@ -81,7 +81,7 @@ for my $person (keys %$conf) {
 	say "processing '$person'\n";
 	my %params = (
 		TIME  => $time,
-		TITLE => $person,
+		TITLE => $person.' - Perl White Camel Awards',
 		URL   => ($conf->{$person}{url} || ''),
 		YEAR  => $conf->{$person}{year},
 		NAME  => $person,
