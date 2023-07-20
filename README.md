@@ -11,6 +11,7 @@ Locally one could just run `script/static.pl` to generated the html files in the
 
 `t/`  has a test script with some minimalistic test cases to see if the static site generator works
 
+Using the [Skeleton responsive boilerplate](http://getskeleton.com/)
 
 ## TODO:
 
