@@ -86,6 +86,7 @@ for my $person (keys %$conf) {
 		YEAR  => $conf->{$person}{year},
 		NAME  => $person,
 		BLOB  => $blob{$person},
+        PAUSE => $conf->{$person}{pause},
 		GITHUB  => $conf->{$person}{github},
 		LINKEDIN  => $conf->{$person}{linkedin},
     );
