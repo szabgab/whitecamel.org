@@ -12,17 +12,11 @@
       <p>Award received in <TMPL_VAR YEAR>.</p>
       <p><TMPL_VAR BLOB></p>
 
-      <TMPL_IF PAUSE>
-         <a href="https://metacpan.org/author/<TMPL_VAR PAUSE>">CPAN</a>
-      </TMPL_IF>
-
-       <TMPL_IF GITHUB>
-         <a href="https://github.com/<TMPL_VAR GITHUB>">GitHub</a>
-      </TMPL_IF>
-
-      <TMPL_IF LINKEDIN>
-         <a href="https://linkedin.com/in/<TMPL_VAR LINKEDIN>">LinkedIn</a>
-      </TMPL_IF>
+      <p>
+      <TMPL_LOOP NAME=LINKS>
+         <span>&#x1F517; <a href="<TMPL_VAR NAME=URL>"><TMPL_VAR NAME=NAME></a></span>
+      </TMPL_LOOP>
+      </p>
 
    </div>
   </div>
