@@ -11,6 +11,13 @@ use POSIX qw( ceil );
 
 sub say { print @_, "\n" };
 
+my %URL_Constructors = (
+    pause       => sub { {name => 'CPAN',     url => 'https://metacpan.org/author/'.$_[0]} },
+    linkedin    => sub { {name => 'Linkedin', url => 'https://linkedin.com/in/'.$_[0]} },
+    github      => sub { {name => 'Github',   url => 'https://github.com/'.$_[0]} },
+    UNKNOWN     => sub { {name => 'Website',  url => $_} },
+);
+
 my $dir = 'docs';
 if (@ARGV) {
     $dir = shift @ARGV;
@@ -79,6 +86,14 @@ for my $row_num (0 .. $num_rows-1) {
 # -- individual people pages --
 for my $person (keys %$conf) {
 	say "processing '$person'\n";
+
+	my @links = map {
+              s/^link_//;
+              ($URL_Constructors{$_} || $URL_Constructors{UNKNOWN})->($conf->{$person}{'link_'.$_})
+            }
+            grep { /^link_/ } 
+            keys %{$conf->{$person}};
+
 	my %params = (
 		TIME  => $time,
 		TITLE => $person.' - Perl White Camel Awards',
@@ -86,9 +101,7 @@ for my $person (keys %$conf) {
 		YEAR  => $conf->{$person}{year},
 		NAME  => $person,
 		BLOB  => $blob{$person},
-        PAUSE => $conf->{$person}{pause},
-		GITHUB  => $conf->{$person}{github},
-		LINKEDIN  => $conf->{$person}{linkedin},
+		LINKS => \@links,
     );
 	if ($blob{$person} eq '') {
 		warn "person '$person' has no blob";
@@ -132,4 +145,3 @@ sub read_file {
 	local $/ = undef;
 	return <$fh>;
 }
-
