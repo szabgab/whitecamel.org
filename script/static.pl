@@ -7,7 +7,7 @@ use Config::Tiny;
 use Data::Dumper qw( Dumper );
 use HTML::Template;
 use List::Util qw( max );
-use POSIX qw( ceil );
+use POSIX qw( ceil strftime );
 
 sub say { print @_, "\n" };
 
@@ -24,8 +24,6 @@ if (@ARGV) {
 }
 mkdir $dir;
 mkdir "$dir/p";
-
-my $time = localtime;
 
 my $conf = Config::Tiny->read('data/people.conf');
 die "Could not read config file: $Config::Tiny::errstr" if not defined $conf;
@@ -63,7 +61,6 @@ for my $row_num (0 .. $num_rows-1) {
 # -- index page --
 {
 	my %params = (
-		TIME    => $time,
 		TITLE   => "White Camel Award Winners",
 		PEOPLE_COL1  => \@people_col1,
 		PEOPLE_COL2  => \@people_col2,
@@ -77,7 +74,6 @@ for my $row_num (0 .. $num_rows-1) {
 # -- sponsors page --
 {
 	my %params = (
-		TIME  => $time,
 		TITLE => "Sponsors of the White Camel Award",
 	);
 	fill_template('sponsors', 'sponsors', %params);
@@ -95,7 +91,6 @@ for my $person (keys %$conf) {
             keys %{$conf->{$person}};
 
 	my %params = (
-		TIME  => $time,
 		TITLE => $person.' - Perl White Camel Awards',
 		URL   => ($conf->{$person}{url} || ''),
 		YEAR  => $conf->{$person}{year},
@@ -116,6 +111,7 @@ for my $person (keys %blob) {
 
 sub fill_template {
 	my ($source, $target, %params) = @_;
+	$params{TIME} = strftime('%Y-%m-%d at %H:%M:%S', gmtime);
 	my $path = "templates/$source.tmpl";
 	#say $path;
     my $template = HTML::Template->new(die_on_bad_params => 0, filename => $path);
