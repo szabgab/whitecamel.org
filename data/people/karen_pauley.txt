@@ -3,10 +3,9 @@ White Camel Award for her work as the president of <a
 href="http://www.perlfoundation.org">The Perl Foundation</a>. For
 several years she has kept the gears turning, oversaw various major
 improvements in management, and putting everything in good order. This
-year <A
-href="http://news.perlfoundation.org/2016/11/tpf-president-change.html
-">she has stepped out of her role in TP</a>. Since she's no longer
-part of TPF, we can recognize her with this award. <A
-href="http://blogs.perl.org/users/shadowcat_mdk/2016/11/the-times-they
--are-a-changin.html">Mark Keating has a much longer discussion of her
+year <a href="https://news.perlfoundation.org/post/tpf_president_change">
+she has stepped out of her role in TP</a>. Since she's no longer
+part of TPF, we can recognize her with this award. <a
+href="http://blogs.perl.org/users/shadowcat_mdk/2016/11/the-times-they-are-a-changin.html">
+Mark Keating has a much longer discussion of her
 work at TPF</a>.
