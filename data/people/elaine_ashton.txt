@@ -1,5 +1,5 @@
 Elaine Ashton has been active in Perl Mongers almost since its beginning. 
-She has been involved in the <a href="http://ny.pm.org">New York</a>, <a
+She has been involved in the <a href="https://www.pm.org/groups/0.html">New York</a>, <a
 href="http://stlouis.pm.org">St. Louis</a>, and <a
 href="http://boston.pm.org">Boston</a> Perl user groups which were some
 of the first user groups to get started. She donated time and resources
