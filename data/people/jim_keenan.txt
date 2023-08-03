@@ -1,4 +1,4 @@
 Jim Keenan has been a quiet but effective Perl influence.
-For years he led Perl Seminar New York, a technical complement to <a href="http://ny.pm.org/">NY.pm's</a> social focus.
+For years he led Perl Seminar New York, a technical complement to <a href="https://www.pm.org/groups/0.html">NY.pm's</a> social focus.
 He volunteers to help at many hackathons, gently advises new events,
 and was instrumental in bringing together separate Perl groups within New York City.

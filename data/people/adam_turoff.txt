@@ -1,5 +1,5 @@
 Adam Turoff is a charter member of the first Perl user group, 
-<a href="http://ny.pm.org/">NY.pm</a>, and helped to create 
+<a href="https://www.pm.org/groups/0.html">NY.pm</a>, and helped to create 
 <a href="http://www.pm.org/">Perl Mongers</a>. He went on to start 
 another Perl user group in Philadelphia and to encourage the 
 formation of many other user
