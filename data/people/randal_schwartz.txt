@@ -1,4 +1,4 @@
-<a href="http://www.stonehenge.com/merlyn">Randal Schwartz</a> has
+<a href="http://www.stonehenge.com/merlyn/">Randal Schwartz</a> has
 been involved with Perl since its early days.  Randal has been a
 tireless advocate of Perl and the community of Perl, and his
 philosophy of giving back to the community is the epitome of the White
