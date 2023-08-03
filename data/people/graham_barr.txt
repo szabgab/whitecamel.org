@@ -1,8 +1,10 @@
 Graham Barr is the creator of the popular search interface for 
 the Comprehensive Perl Archive Network (CPAN). Graham has been 
 quietly running the 
-<a href="http://search.cpan.org/">search.cpan.org</a> website for years, providing 
+<a href="https://web.archive.org/web/20180624041928/http://search.cpan.org/" class="web-archive">search.cpan.org</a>* website for years, providing 
 a service that thousands of Perl users rely upon every day. 
 Graham recently released an updated interface to this website, 
 making it even more useful.
 
+<br/><br/>
+<i>* search.cpan.org was replaced by <a href="https://metacpan.org/">MetaCPAN</a> on June 25, 2018</i>
