@@ -1,5 +1,5 @@
-<a href="http://www.lohutok.net/">Allison</a> is at the center of the
-Perl community. She's been president of <a href="http://www.perlfoundation.org/">The Perl Foundation</a>, 
+<a href="https://www.lohutok.net/">Allison</a> is at the center of the
+Perl community. She's been president of <a href="https://www.perlfoundation.org/">The Perl Foundation</a>, 
 a leader
 and manager of various parts of the Perl 6 and 
 <a href="http://www.parrot.org/">Parrot</a> efforts, as well

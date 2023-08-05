@@ -1,4 +1,4 @@
-You may think of  <a href="http://tim.oreilly.com/">Tim</a> as the guy
+You may think of  <a href="https://www.oreilly.com/tim/">Tim</a> as the guy
 who published
 <i>Programming perl</i> and <i>Learning Perl</i>, but he also
 kick-started the current form of the Perl community by giving it a

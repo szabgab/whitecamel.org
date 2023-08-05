@@ -1,7 +1,7 @@
-brian d foy founded the <a href="http://www.pm.org/">Perl Mongers</a> 
+brian d foy founded the <a href="https://www.pm.org/">Perl Mongers</a> 
 groups at the first Perl conference in 1997, and started the 
 White Camel awards in
-1999. He is the publisher of <a href="http://www.theperlreview.com/">The Perl Review</a>, 
+1999. He is the publisher of <a href="https://www.theperlreview.com/">The Perl Review</a>, 
 which just celebrated
 its first issue in print. He recently returned from year in the desert
 maintaining Perl modules without electricity or internet access.

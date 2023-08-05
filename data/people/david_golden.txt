@@ -3,6 +3,6 @@ community, and probably recognize him as "xdg" . He could have
 received a White Camel in any category. He's a constant force in
 establishing consensus for the Perl toolchain, the QA workshops, and
 many other social constructs that make everything work together.
-Besides that technical work, he's also one of the organizers of the <A
-href="https://www.meetup.com/The-New-York-Perl-Meetup-Group/">New York
+Besides that technical work, he's also one of the organizers of the
+<a href="https://www.meetup.com/The-New-York-Perl-Meetup-Group/">New York
 Perl mongers</a>.
