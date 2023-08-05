@@ -8,3 +8,22 @@
     color: #777;
     font-style: italic;
 }
+
+a.web-archive:after {
+/* a[href*="web.archive.org"]:after { */
+    content: url('/assets/css/icon_web-archive.svg');
+    top: -.4em;
+    margin-left: 0.1em;
+    position: relative;
+}
+
+#current-winner { 
+    box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    margin-bottom: 5%;
+}
+
+#award-description {
+    padding: 1rem;
+    margin-bottom: 5%;
+}
