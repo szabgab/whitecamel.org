@@ -2,11 +2,12 @@ use strict;
 use warnings;
 
 use Plack::Builder;
-
 use Plack::App::File;
-my $app = Plack::App::File->new(root => "docs")->to_app;
+
+my $root_dir = './docs/';
+my $app = Plack::App::File->new({ root => $root_dir })->to_app;
 
 builder {
-      enable "DirIndex", dir_index => 'index.html';
+      enable "Plack::Middleware::DirIndex", root => $root_dir;
       $app;
 }
