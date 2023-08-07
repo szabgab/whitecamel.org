@@ -5,7 +5,7 @@
 
 This repository contains the source code of, and tools for whitecamel.org website. The site is served using GitHub pages.
 
-`script/static.pl` generates static html pages under the `docs/` folder, which is then copied by the GitHub action.
+The `docs/` folder contains static files that are copied by the GitHub action, and then the `script/static.pl` generates the html pages.
 
 `docs/CNAME` contains the domain name.
 
