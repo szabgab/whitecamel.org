@@ -1,19 +1,28 @@
-# The source of [whitecamel.org](https://whitecamel.org/)
+# [WhiteCamel.org](https://whitecamel.org/)
 
-## Static site generation:
 
-The site is served using GitHub pages.
+## Introduction
 
-The `docs/` folder contains static files that are copied by the GitHub action and then the `script/static.pl` generates the html pages.
+This repository contains the source code of, and tools for whitecamel.org website. The site is served using GitHub pages.
+
+The `docs/` folder contains static files that are copied by the GitHub action, and then the `script/static.pl` generates the html pages.
+
 `docs/CNAME` contains the domain name.
 
-Locally one could just run `script/static.pl` to generated the html files in the `docs` folder.
+`t/`  has a test script with some minimalistic test cases to see if the static site generator works.
 
-`t/`  has a test script with some minimalistic test cases to see if the static site generator works
+## Local Demo and Development
 
-Using the [Skeleton responsive boilerplate](http://getskeleton.com/)
+1. Run `script/static.pl` to generate the html files in the `docs/` folder.
+2. Serve them on localhost using included [Plack](https://metacpan.org/pod/Plack) app:
 
-## TODO:
+```
+plackup app.psgi
+```
+3. In your browser access `http://localhost:5000/`
+
+
+## TODO
 
 * Write down the history of the award and what the process is deciding who gets it.
   The awards were originally given out by Perl Mongers, Inc but passed
@@ -48,21 +57,22 @@ Using the [Skeleton responsive boilerplate](http://getskeleton.com/)
 
 ## Description
 
-/index.html
-  The pictures of the latest awardees with the text below each
+`/index.html` - The pictures of the latest awardees with the text below each
 
-/awardees.html
+`/awardees.html`
 List of all the awardees with links to their individual pages
 Maybe the list should be grouped by year and not abc
 
 
 Links to pages for each year: ????
-   /2010/
-   /2009/
-   ...
+
+   - /2010/
+   - /2009/
+   - ...
+
 Each year has the list of the awardees with pictures.
 
-## Contributors
 
-* [Irakliy Sunguryan](https://github.com/OpossumPetya)  (design)
+## Third-party Integrations
 
+[Skeleton responsive boilerplate](http://getskeleton.com/)
