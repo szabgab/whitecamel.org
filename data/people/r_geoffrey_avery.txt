@@ -1,0 +1,3 @@
+Since YAPC::NA 2003 in Boca Raton, R Geoffrey Avery has been the Keeper of the Gong, running the Lightning Talks at more than 50 Perl conferences on two continents. At just five minutes each, the Lightning Talks give the experienced speaker a chance to cover an extra topic quickly, or a new speaker the chance to start small. Today’s first time speaker could present a keynote a few conferences later.
+
+Since YAPC::NA 2011 in Asheville, Geoffrey has been part of the team organizing the conference in North America.
