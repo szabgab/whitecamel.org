@@ -1,0 +1,7 @@
+Olaf is the guy behind <a href="https://metacpan.org/">MetaCPAN</a>. He co-founded the project in late 2010 as a means to aggregate data for an iOS application. The phone app fizzled, but MetaCPAN took on a life of its own. Olaf has been part of the team working on it ever since.
+
+Olaf is also the person responsible for <a href="https://www.perl.com/">perl.com</a>’s revival. After the site became inactive for several years, Olaf brought the site back to life. Anyone can <a href="https://github.com/dnmfarrell/perldotcom/blob/master/CONTRIBUTING.md">submit an article</a> via GitHub.
+
+In 2023, Olaf also took over the <a href="https://perladvent.org/">Perl Advent Calendar</a>, a long-running tradition previously managed by Mark Fowler.
+
+Olaf also helps to maintain the modules in the <tt>libwww-perl</tt> organization. He is the author of “<tt>perlimports</tt>” and several other modules.
