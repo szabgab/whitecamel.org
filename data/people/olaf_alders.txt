@@ -1,0 +1,9 @@
+<p>Most likely people recognize Olaf as the guy behind <a href="https://metacpan.org/">MetaCPAN</a>. He co-founded the project in late 2010 as a means to aggregate data for an iOS application. The phone app fizzled, but MetaCPAN took on a life of its own. Olaf has been part of the team working on it ever since. MetaCPAN is a user-friendly search and discovery platform for Perl modules and distributions, based on CPAN (Comprehensive Perl Archive Network).</p>
+
+<p>Olaf is also the person responsible for <a href="https://www.perl.com/">perl.com</a>’s revival. After the site became inactive for several years, Olaf brought the site back to life. He’s always looking for new contributions. Anyone can <a href="https://github.com/dnmfarrell/perldotcom/blob/master/CONTRIBUTING.md">submit an article</a> via GitHub.</p>
+
+<p>In 2023, Olaf also took over the <a href="https://perladvent.org/">Perl Advent Calendar</a>, a long-running tradition previously managed by Mark Fowler, whom we would like to acknowledge for his 20+ years of dedication.</p>
+
+<p>When Olaf is not working on websites, he is spending time with his family and his dog. He enjoys open-water swimming, biking, and running. He is in the pool regularly with his local Masters Swim Club. He is currently recording guitar parts for a post-punk song cycle about Ragnarök.</p>
+
+<p>In his technical work, Olaf also helps to maintain the modules in the <a href="https://github.com/libwww-perl">libwww-perl</a> organization. He is the author of “perlimports” and several <a href="https://metacpan.org/author/OALDERS">other modules</a>. Olaf is a regular attendee of the Perl Toolchain Summit.</p>
